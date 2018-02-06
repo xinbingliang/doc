@@ -45,6 +45,7 @@
     phone //手机号
     password //密码
     code //验证码
+    nickname //昵称
     ```
 
 - 返回结果：
