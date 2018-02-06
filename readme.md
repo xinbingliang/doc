@@ -113,6 +113,9 @@
             "password": "e10adc3949ba59abbe56e057f20f883e"
         }
     }
+
+
+    补秩序大使
     ```
 
   - 错误
@@ -262,7 +265,31 @@
 
 ##星盘数据
 
+- 请求方式：GET
 
+- 链接：`https://suan.co-links.com/app.php/v0.0.1/appxinpan?uid=254`
+
+  - 参数说明
+    - `uid` 用户id
+
+- 返回结果：
+
+  - 正常
+
+    ```json
+    {
+        "code": "0000",
+        "data": {
+            "nickname": "家住河边喜欢浪",
+            "avator": "http://wx.qlogo.cn/mmopen/d2fJZTzRTuk9uuNO2ecsgCbVggpovrhLw7PxFdvuLx6mmxNlqADBMcAibLvGACLPibQKZUK94AQ53DXgicR2CNaPeYfc3MWtmVB/132",
+            "sun_constellation": "水瓶座",
+            "gua_ping": "山水蒙",
+            "element": "火"
+        }
+    }
+    ```
+
+## 个人信息数据（包含芯灵卡）
 
 ## 微信授权
 
@@ -295,7 +322,7 @@
 
 ### 个人报告(给页面)
 
-
+* `https://suan.co-links.com/app.php/v0.0.1/ka?uid=290`
 
 ### 好友报告(给页面)
 
@@ -350,4 +377,3 @@ imgUrl: 'https://suan.co-links.com/html/img/shared.png', // 分享图标
 
 ## 面向结果返回
 
-## 意见反馈
