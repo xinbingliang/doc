@@ -189,7 +189,7 @@
     xing //姓
     ming //名
     time //时间,使用时间戳
-    sex //性别
+    sex //性别，1男 2女
     uid //用户id
     ```
 
@@ -235,17 +235,61 @@
     }
     ```
 
-## 问题提交
+## 问题结果提交
 
+- 请求方式：POST
 
+- 链接：`https://suan.co-links.com/app.php/v0.0.1/appquestion`
 
+  - 参数说明
+    - `uid` 用户id
+    - `result` 用户测试结果，每个问题选是为1，选否为0，将结果相加，最小为1最大为9
 
+- 返回结果：
+
+  - 正常
+
+    ```json
+    {
+        "code": "0000",
+        "data": "success"
+    }
+    ```
+
+  - 错误
+
+    - `u007` 人格测试数据提交失败
 
 ##星盘数据
 
 
 
 ## 微信授权
+
+- 请求方式：POST
+
+- 链接：`https://suan.co-links.com/app.php/v0.0.1/appweixin`
+
+  - 参数说明
+    - `uid` 用户id
+    - `unionid` 微信unionid
+    - `nickname` 昵称
+    - `avator` 头像
+
+- 返回结果：
+
+  - 正常
+
+    ```json
+    {
+        "code": "0000",
+        "data": "success"
+    }
+    ```
+
+  - 错误
+
+    - `u008` 微信授权失败
 
 ## 个人信息数据（包含芯灵卡）
 
