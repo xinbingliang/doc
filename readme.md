@@ -295,11 +295,56 @@
 
 ### 个人报告(给页面)
 
+
+
 ### 好友报告(给页面)
+
+* `https://suan.co-links.com/app.php/v0.0.1/friend?s_uid=X&o_uid=Y` 注意拼接自己和好友关系报告其中，s_uid为自己uid，o_uid为好友id
 
 ## 好友列表
 
+- 请求方式：GET
+
+- 链接：`https://suan.co-links.com/app.php/v0.0.1/Appfirendlist?uid=254`
+
+  - 参数说明
+    - `uid` 用户id
+
+- 返回结果：
+
+  - 正常
+
+    ```json
+    {
+        "code": "0000",
+        "data": [
+            {
+                "id": "204",
+                "unionid": "oUaAmxOzK6lNDyYB5_xEUHijtARE",
+                "avator": "http://wx.qlogo.cn/mmopen/BPaw33EWG2cISWwz0t0AOIhqc9puuXKBLBx3vwTA5HpciaOBhTOV9adOlw4fumYnNEk8wkvicMRb69IibxZnBC0CC44BW9ibjLR6/132",
+                "nickname": "涛",
+                "rengge_id": "7",
+                "keyword": "活跃型的创造可能者",
+                "bosom": "莫逆之交",
+                "degree": "76",
+                "self_id": "254"
+            }
+        ]
+    }
+    ```
+
+    - `https://suan.co-links.com/app.php/v0.0.1/friend?s_uid=X&o_uid=Y` 注意拼接自己和好友关系报告其中，s_uid为自己uid，o_uid为好友id
+
+  - 错误
+
 ## 邀请卡
+
+```
+title: '芯算AI人工智能算命', // 分享标题
+desc: '芯算A人工智能算命-好友邀请卡', // 分享描述
+link: 'https://suan.co-links.com/app.php/v0.0.1/share?uid=', // uid后面接用户uid
+imgUrl: 'https://suan.co-links.com/html/img/shared.png', // 分享图标
+```
 
 ## 拍脸上传
 
