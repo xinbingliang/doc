@@ -66,6 +66,59 @@
     - `u002` 验证码错误
     - `u004` 用户已经存在
 
+### 登录
+
+- 请求方式：POST
+
+- 链接：`https://suan.co-links.com/app.php/v0.0.1/appuser`
+
+  - 参数说明
+
+    ```
+    phone //手机号
+    password //密码
+    ```
+
+- 返回结果：
+
+  - 正常
+
+    ```
+    {
+        "code": "0000",
+        "data": {
+            "id": "290",
+            "openid": null,
+            "nickname": "辛丙亮",
+            "phone": "15102724518",
+            "gender": null,
+            "avator": null,
+            "sun_constellation": null, //当该参数为null,说明没有完成先天报告
+            "moon_constellation": null,
+            "element": null,
+            "birth": null,
+            "gua": null,
+            "gua_ping": null,
+            "gua_jie": null,
+            "token": "C4IAqGV3cQ",
+            "xing": null,
+            "ming": null,
+            "wuxing1": null,
+            "wuxing2": null,
+            "constellation_info": null,
+            "rengge_id": null, //当该参数为null，说明没有完成后天报告
+            "time": "1517881076",
+            "unionid": null,
+            "ka_time": "1517381511",
+            "password": "e10adc3949ba59abbe56e057f20f883e"
+        }
+    }
+    ```
+
+  - 错误
+
+    - `u005` 该用户不存在，或用户名密码错误
+
 ##找回密码
 
 ### 发送找回验证码
