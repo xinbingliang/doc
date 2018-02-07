@@ -152,7 +152,7 @@
 
 - 请求方式：POST
 
-- 链接：`https://suan.co-links.com/app.php/v0.0.1/appregister`
+- 链接：`https://suan.co-links.com/app.php/v0.0.1/appuserback`
 
   - 参数说明
 
