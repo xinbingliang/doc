@@ -199,8 +199,17 @@
 
     ```json
     {
-      "code": "0000",
-      "data": "success"
+        "code": "0000",
+        "data": {
+            "nickname": "李鑫",
+            "avator": "http://wx.qlogo.cn/mmopen/BPaw33EWG2euSKM9vHWlXwsZFKWqepG1YPicMU23WOBGNuIXOlNlxldyPh5ArthILvlaIOMjRCJsEh7ULYq4KLrygk3XboEOl/132",
+            "sun_constellation": "水瓶座",
+            "gua_ping": "风地观",
+            "element": "水",
+            "sun_constellation_index": 11,
+            "gua_ping_index": 20,
+            "element_index": 3
+        }
     }
     ```
 
@@ -286,8 +295,6 @@
     }
     ```
 
-## 个人信息数据（包含芯灵卡）
-
 ## 微信授权
 
 - 请求方式：POST
@@ -316,6 +323,27 @@
   - 错误
 
     - `u008` 微信授权失败
+
+##微信登录
+
+- 请求方式：POST
+
+- 链接：`https://suan.co-links.com/app.php/v0.0.1/appweixinlogin`
+
+  - 参数说明
+    - `unionid`  
+    - `nickname`
+    - `iconurl`
+
+- 返回结果：
+
+  - 正常
+
+    `````
+
+    `````
+
+  - 错误
 
 ## 个人信息数据（包含芯灵卡）
 
