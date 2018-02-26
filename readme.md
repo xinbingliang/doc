@@ -58,11 +58,57 @@
 
 ### 获得人脸结果
 
+- 请求方式：GET
 
+- 链接：`https://suan.co-links.com/app.php/v0.0.1/Appface?uid=334`
 
+  - 参数说明
+    - uid 用户id
 
+- 返回结果：
 
+  - 正常
 
+    ```json
+    {
+        "code": "0000",
+        "data": {
+            "self_img": "https://graph.baidu.com/resource/29563204e73edbf386d5001519630212.jpg?isbface=1",
+            "star_name": "丁磊",
+            "star_number": "89.3%",
+            "best_like": "你和丁磊的鼻子真是像呢",
+            "describe": "有大智慧，不局限于一般人的小聪明。爱恨分明，受恩必报，重诺守信。做事比较勤勉，处事小心谨慎。领导能力强，如遇得力助手协助，成功有望。生活作息都比较规律，一生很注重养生。",
+            "tag": [
+                "八字眉",
+                "凤眼",
+                "孩子鼻",
+                "标准唇",
+                "圆形脸",
+                "自然色"
+            ],
+            "number": "你的面相评分：92分",
+            "crux": "气宇轩昂、精神饱满，积极奋进的干练好青年。点击查看五官介绍和相关推荐。",
+            "face_score_describe": "明星气质：像陈翔一样帅气不羁，绅士优雅",
+            "best_tag": [
+                "圆形脸",
+                "凤眼"
+            ],
+            "face_score": "你的颜值：86分, 击败82%用户",
+            "star_img": "https://graph.baidu.com/thumb/v2/526959296,60202822.jpg",
+            "face_id": "b9c13d0f2b1da2708d29d8cd164de880f931668a",
+            "link": "https://suan.co-links.com/tmp/face/face_15196302085455.jpeg"
+        }
+    }
+    ```
+
+  - 错误
+
+    ````
+    {
+        "code": "f001",
+        "data": null
+    }
+    ````
 
 ## 登录注册
 
